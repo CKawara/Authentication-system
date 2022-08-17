@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'djoser',
     'accounts',
+    'social_django',
+    'rest_framework_simplejwt',
+    'rest_framework_simplejwt.token_blacklist'
 ]
 
 MIDDLEWARE = [
@@ -161,7 +164,11 @@ DJOSER ={
     'USERNAME_RESET_CONFIRM_URL' : 'email/reset/confirm/{uid}/{token}',
     'ACTIVATION_URL' : 'activate/{uid}/{token}',
     'SEND_ACTIVATION_EMAIL' : True,
-
+    'SERIALIZERS':{
+        'user_create': 'accounts.serializers.UserCreateSerializer',
+        'user': 'accounts.serializers.UserCreateSerializer',
+        'user_delete': 'djoser.serializers.UserDeleteSerializer',
+    }
 }
 
 # Default primary key field type
