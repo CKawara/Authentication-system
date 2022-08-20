@@ -143,6 +143,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # set default authentication to jwt authentication
 REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES':[
+        'rest_framework.permissions.IsAuthenticated'
+    ],
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
