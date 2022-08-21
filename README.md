@@ -17,7 +17,7 @@ The features include;
       npm install
       npm run build
       ```
-      to install the required frontend packages and  make a build folder and copy it into the backend folder
+      to install the required frontend packages and  make a build folder and copy it into the root(backend) folder
 *   in the backend folder, run: 
       ```
       python3 -m venv venv
@@ -28,7 +28,7 @@ The features include;
       pip install -r requirements.txt
       ```
 
-* In backend/auth_system/settings.py:
+* In auth_system/settings.py:
 
 -   under DATABASES, set the PASSWORD field to your database password
 -   under EMAIL_HOST_USER, set the email that you want to use
@@ -39,6 +39,6 @@ The features include;
 
 ## Known bugs
 
- -import error while importing urlquote from django.utils.http, is preventing google authentication
+ - import error while importing urlquote from django.utils.http, is preventing google authentication
 
 
