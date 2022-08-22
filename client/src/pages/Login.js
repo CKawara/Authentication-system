@@ -22,7 +22,7 @@ const Login = ({login, isAuthenticated}) => {
 
     const continueWithGoogle = async () => {
         try {
-            const res = await axios.get('/auth/o/google-oauth2/?redirect_uri=/')
+            const res = await axios.get('/auth/o/google-oauth2/?redirect_uri=http://localhost:8000')
 
             window.location.replace(res.data.authorization_url);
         } catch (err) {
