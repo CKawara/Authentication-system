@@ -9,7 +9,7 @@ The features include;
  - Password reset, and also 
  - Social authentication with google and oauth2. 
  
-##Live Link
+## Live Link
 (To be uploaded)
 
 ## Setup Requirements
