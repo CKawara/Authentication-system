@@ -37,8 +37,4 @@ The features include;
 -   under SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET, paste in your google oauth2 secret
 
 
-## Known bugs
-
- - import error while importing urlquote from django.utils.http, is preventing google authentication
-
 
